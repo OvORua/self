@@ -124,14 +124,14 @@
           reader.readAsDataURL(file);
         }
 
-        if (!localStorage.getItem("username") || !localStorage.getItem("userno") || !localStorage.getItem("usersch") || localStorage.getItem("username") == "" || localStorage.getItem("userno") == "" || localStorage.getItem("usersch") == "") {
-            alert("[FBI Warning] 需要提供姓名和学号来生成你的出入通行证，此信息**不会上传**服务器，仅限本地存储。点击状态栏的箭头可以修改个人信息，点击状态栏右上方可以切换头像。点击下方的圆形按钮可切换进/出校状态");
-            alert("[FBI Warning] 请先点击箭头上传个人信息，再右上角刷新上传头像！")
-            setInfo();
-        } else if(localStorage.getItem("username") == "null" || localStorage.getItem("userno") == "null" || localStorage.getItem("usersch") == "null") {
-            alert("[FBI Warning] 当前个人信息为null，点击状态栏的箭头可以修改个人信息");
-            alert("[FBI Warning] 请先点击箭头上传个人信息，再点击右上角刷新上传头像！")
-        }
+        //if (!localStorage.getItem("username") || !localStorage.getItem("userno") || !localStorage.getItem("usersch") || localStorage.getItem("username") == "" || localStorage.getItem("userno") == "" || localStorage.getItem("usersch") == "") {
+        //    alert("[FBI Warning] 需要提供姓名和学号来生成你的出入通行证，此信息**不会上传**服务器，仅限本地存储。点击状态栏的箭头可以修改个人信息，点击状态栏右上方可以切换头像。点击下方的圆形按钮可切换进/出校状态");
+        //    alert("[FBI Warning] 请先点击箭头上传个人信息，再右上角刷新上传头像！")
+        //    setInfo();
+        //} else if(localStorage.getItem("username") == "null" || localStorage.getItem("userno") == "null" || localStorage.getItem("usersch") == "null") {
+        //    alert("[FBI Warning] 当前个人信息为null，点击状态栏的箭头可以修改个人信息");
+        //    alert("[FBI Warning] 请先点击箭头上传个人信息，再点击右上角刷新上传头像！")
+        //}
         // 设置用户名
         var username = document.getElementById("user-name");
         username.innerHTML = localStorage.getItem("username");
